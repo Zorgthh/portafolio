@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #4b79a1, #283e51);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1, header p {
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+#theme-toggle, #language-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #4b79a1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+#language-toggle {
+    right: 6rem;
+}
+
+#theme-toggle:hover, #language-toggle:hover {
+    background-color: #283e51;
+}
+
+nav {
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+nav.dark-mode {
+    background-color: #444;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4b79a1;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section.dark-mode {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+h2 {
+    color: #4b79a1;
+    border-bottom: 2px solid #4b79a1;
+    padding-bottom: 0.5rem;
+    animation: slideIn 1s ease-in-out;
+}
+
+.proyecto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.proyecto img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    transition: background-color 0.3s;
+}
+
+footer.dark-mode {
+    background-color: #444;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
